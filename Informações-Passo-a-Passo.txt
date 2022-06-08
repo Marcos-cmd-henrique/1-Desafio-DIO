@@ -1,0 +1,62 @@
+# Criação, Atualização e Sincronização - GITHUB 
+
+## Criação da Conta (Create)
+
+- Primeiro, você deve criar uma conta do GitHub usando o link (https://github.com/)
+- Segundo, instalar no GitHub na sua máquina através do link (https://desktop.github.com/) 
+- Após ter a conta com seu e-mail e usuário GIT e, ter seu GIT BASH HERE na máquina instalado, vamos configura-lo. 
+
+## Comandos Terminal Git Bash 
+
+- cd c:/ (o comando cd seguido da pasta que deve entrar, é para entrar naquela pasta)
+- mkdir Workspace (o comando mkdir seguido de um nome, é para criar uma pasta)
+- ls (para verificar as pastas e diretórios dentro da pasta que você está)
+- ls -a (para verificar as pastas em oculto)
+- dir (a mesma função do ls, depende se o terminal é linux ou windows, dir é para windows)
+
+## Configuração no GIT BASH HERE 
+
+- git config --list (para verificar como esta seu usuário e suas configurações)
+- git config --global user.email "dentro dessa string, coloque o e-mail cadastrado"
+- git config --global user.name: TESTE (Não precisa ser dentro de string, coloque o nome de seu usuário escolhido)
+
+## Alterar os Usuários ou Outros 
+
+- git config --global --unset user.email "marcosdio@gmail.com" (alterar nas configurações)
+- git config --global --unset user.name "DESAFIO" (alterar nas configurações)
+- git config --list (para verificar se alterou)
+
+## echo 
+
+- echo > README.md (o echo cria o README que é como a home page do teu git, onde mostra inicialmente em formato Markdown mais especificações do seu repositório)
+
+## CRIANDO REPOSITÓRIO REMOTO NO GITHUB 
+
+- git init (estamos criando/inicializando um repositório dentro da pasta)
+
+
+- git add * (comando para adicionar tudo que estava em untracked para stage. O add * adiciona tudo para poder dar o commit)
+- git commit -m "criando repositório" (Após add, ele precisa guardar o arquivo comitado. Os commits são para comentar as mudanças nos respositórios, afim de que, os DEV vejam o que foi feito naquele commit de atualização ou inserção de código) 
+- git remote add origin (link do repositório que você criou no site) 
+- git remote -v 
+- git status (para verificar se esta tudo certo)
+- git push origin master (esta empurrando meu repositório para o GITHUB)
+
+## Erro de inserção, o que fazer: 
+
+- git pull origin master (esta puxando meu repositorio em caso de erro no ato da inserção do repositorio ao GITHUB) 
+- Envia novamente coforme acima, talvez deixou de adicionar alguma informação 
+
+## ATUALIZAÇÃO 
+
+- git status (para verificar a alteração que você fez se esta em untracked)
+- git add * (adiciona o que será necessário para enviar novamente, para mudar o estado para stage e ser comitado)
+- git commit -m "adicionando botão de excluir" 
+- git push origin master 
+
+
+
+
+
+
+
